@@ -9,8 +9,15 @@ with open('guesses.json', 'r') as guesses:
 # +2 points for result and score
 # +1 point for score
 
+teams = [
+    "Rangers", "Celtic", "Real Madrid", "Barcelona", "Man United", "Man City",
+    "Aberdeen", "Cove", "Peterhead", "Alloa", "Montrose", "Arbroath", "Liverpool", "Everton",
+    "Hearts", "Hibbs", "Accrington Stanley", "Forrest Green", "Leeds", "Notts", "Motherwell", "Airdrie", 
+    "Keith", "Devronvale", "West Ham", "Crystal Palace","West Brom", "Aston Villa"
+        ]
+
 def play_game(team1, team2, game):
-    players = ["christie", "neil", "rambo", "keith", "hindu", "gavin"]
+    players = ["christie", "mupps", "rambo", "keith", "hindu", "gav"]
     roll1 = random.randint(0,4)
     roll2 = random.randint(0,4)
     if roll1 == roll2:
@@ -47,7 +54,7 @@ def play_game(team1, team2, game):
 
 
 def leaderboard():
-    players = ["christie", "neil", "rambo", "keith", "hindu", "gavin"]
+    players = ["christie", "mupps", "rambo", "keith", "hindu", "gav"]
     for player in players:
         print(player + " - " + str(score_dict[player]))
 
@@ -127,3 +134,4 @@ leaderboard()
 # Aston Villa - 0
 # It's a draw
 # --------------------------------
+# {"gav": 5, "keith": 4, "christie": 3, "hindu": 7, "rambo": 2, "neil": 4}
