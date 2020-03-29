@@ -46,8 +46,11 @@ def play_game(team1, team2, game):
     print(str(team1) + " " + str(roll1) + " - " + str(roll2)+ " " + str(team2))
 
 
-# def leaderboard():
-#     print(score_dict)
+def leaderboard():
+    players = ["christie", "neil", "rambo", "keith", "hindu", "gavin"]
+    for player in players:
+        print(player + " - " + str(score_dict[player]))
+
 
 ##########  format, HOME TEAM, AWAY TEAM ##########
 play_game("Rangers", "Celtic", 0)  # 1
@@ -65,7 +68,7 @@ play_game("Keith", "Devronvale", 11)  # 12
 play_game("West Ham", "Crystal Palace", 12)  # 13
 play_game("West Brom", "Aston Villa", 13)  # 14
 ###################################################
-
+leaderboard()
 # Week 1
 
 # Rangers - 1
@@ -124,20 +127,3 @@ play_game("West Brom", "Aston Villa", 13)  # 14
 # Aston Villa - 0
 # It's a draw
 # --------------------------------
-
-#######################################
-# one point for everything correct
-# 1. D - 0
-# 2. A - 1
-# 3. H - 1
-# 4. D - 0
-# 5. A - 
-# 6. D
-# 7. H 
-# 8. D 
-# 9. H 
-# 10.D 
-# 11.A 
-# 12. D 
-# 13. A 
-# 14. D 
