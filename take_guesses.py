@@ -14,7 +14,7 @@ hindu_guesses = []
 keith_guesses = []
 mupps_guesses = []
 rambo_guesses = []
-valid_inputs = ["0","1","2","3","4","5","6","7","8","9"]
+valid_inputs = ["0","1","2","3"]
 for letters in christie:
     if letters in valid_inputs:
         christie_guesses.append(int(letters))
@@ -54,7 +54,7 @@ def print_out_guesses():
     players = ["christie", "gav", "hindu", "keith", "mupps", "rambo"]
     for people in players:
         dictionary = guesses_dict[people]
-        print(people + ": " + str(dictionary))
+        print(people + ": " + str(dictionary) + str(len(dictionary)))
 
 
 #######################
